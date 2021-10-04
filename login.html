@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>LOGIN</title>
+        <link rel="stylesheet" href="css/login.css">
+        
+    </head>
+
+    <body>
+        <div class="logo">
+            <a href="main.html"><img src="img/logo.png"></a>
+        </div>
+        <div id="contents">
+            <div class="login-wrap">
+                <div class="row">
+                    <ul class="form-submit form-login">
+                        <li>
+                            <input id="member_id" name="member_id" 
+                                    fw-filter="isFill" fw-label="아이디" 
+                                    fw-msg="" class="inputTypeText" placeholder="ID"
+                                     value="" type="text">
+                        </li>
+                        <li>
+                            <input id="member_passwd" name="member_passwd" 
+                                    fw-filter="isFill&amp;isMin[4]&amp;isMax[16]" 
+                                    fw-label="패스워드" fw-msg="" placeholder="PASSWORD"
+                                    autocomplete="off" value="" type="password">
+                        </li>
+                    </ul>
+                    <a href="#" onclick="MemberAction.login('member_form_6553612255');
+                         return false;" class="button login-button-signin">Sign In</a> <br>
+                    <a href="join.html" class="button login-button-join">Create Account</a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

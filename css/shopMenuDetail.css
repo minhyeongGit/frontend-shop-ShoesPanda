@@ -1,0 +1,100 @@
+.product-intro {
+	/* position: relative; */
+	width: 998px;
+	height: 450px;
+	margin: 20px auto 30px;
+	padding: 50px 0 20px 0;
+	border: 1px solid #ccc;
+}
+
+div {
+	display: block;
+}
+
+.product-intro .imgArea {
+	float: left;
+	width: 500px;
+	height: 300px;
+	margin: 0 0 0 50px;
+}
+
+.product-intro .infoArea {
+	float: left;
+	width: 350px;
+	padding: 10px 0 0 0;
+	width: 400px;
+	text-align: center;
+}
+
+.product-intro .infoArea h {
+	position: relative;
+	font-size: 20px;
+	padding-left: 8px;
+	padding-bottom: 15px;
+	border-bottom: 1px solid #e8e8e8;
+	margin-bottom: 30px;
+	margin-top: 10px;
+	color: #666;
+	font-weight: 400;
+}
+
+.product-intro .infoArea th {
+	font-weight: normal;
+	color: #353535;
+	width: 115px;
+	padding: 7px 0 8px 9px;
+	text-align: left;
+	vertical-align: middle;
+}
+
+table {
+	margin-top: 50px;
+	position: relative;
+}
+
+.record td {
+	vertical-align: middle;
+}
+
+.infoArea .record th {
+	padding-top: 14px;
+	border-top: 1px solid #e8e8e8;
+	padding: 7px 0 5px 4px;
+	vertical-align: top;
+	font-weight: normal;
+	color: #353535;
+	width: 105px;
+}
+
+#detailbtnid2 {
+	display: inline-block;
+	width: 193px;
+	height: 40px;
+	color: #fff;
+	background: #c8c8c8;
+	line-height: 40px;
+	text-align: center;
+	font-size: 12px;
+	border: 1px solid #c8c8c8;
+	letter-spacing: 4px;
+	margin-top: 10px;
+}
+
+#detailbtnid3 {
+	display: inline-block;
+	width: 133px;
+	height: 40px;
+	color: #777;
+	background: #fff;
+	line-height: 40px;
+	text-align: center;
+	font-size: 12px;
+	margin-left: 6px;
+	border: 1px solid #ddd;
+	letter-spacing: 4px;
+	margin-top: 10px;
+}
+
+.shoes-details {
+	text-align: center;
+}

@@ -1,0 +1,32 @@
+.faq{margin:20px 0;}
+.faq button{
+    width: 100%;
+    text-align: left;
+    padding: 5px;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #000;
+    cursor:pointer;
+}
+.cont{
+    padding: 10px;
+    background-color: #efefef;
+}
+.faq li > div{display: none;}
+
+.board_page {
+    margin-top: 15px;
+    text-align: center;
+    
+}
+
+.mainFaq {
+    width: 100%;
+    border-top: 2px solid #000;
+}
+
+.paging {
+    margin-top: 30px;
+    text-align: center;
+    
+}

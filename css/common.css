@@ -1,0 +1,193 @@
+/* 공용 */
+* {
+  margin: 0px;
+  padding: 0px;
+}
+ul,
+li {
+  list-style: none;
+}
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+}
+a:visited,
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none;
+}
+a.link_info {
+  text-decoration: none;
+  color: white;
+}
+
+/* header */
+.header {
+  z-index: 100;
+  position: fixed;
+  width: 100%;
+  height: 125px;
+  background-color: #69836f;
+  box-shadow: 0 5px 10px 5px rgba(0, 0, 0, 0.25);
+}
+.header_bar {
+  width: 1100px;
+  padding: 0 10px;
+  margin: 0 auto;
+  /* border-bottom: 2px solid rgba(255, 255, 255, 0.25); */
+  padding-top: 15px;
+}
+.header_bar .main_logo {
+  line-height: 1;
+  height: 50px;
+  overflow: hidden;
+}
+.header_bar .logo img {
+  height: 60px;
+}
+.header_bar .logo {
+  text-align: center;
+  line-height: 0;
+  margin-bottom: 10px;
+}
+
+/* GNB */
+.gnb {
+  text-align: center;
+  height: 50px;
+}
+.gnb .menu1 {
+  margin-left: 20px;
+}
+.gnb .menu_txt1 {
+  font-size: 20px;
+  color: #ccc;
+  font-weight: bold;
+}
+.gnb .on .menu_txt1 {
+  color: #fff;
+}
+.gnb .menu_txt2 {
+  font-size: 16px;
+}
+.gnb li {
+  padding: 0;
+}
+.gnb li a {
+  display: block;
+}
+.gnb .menu1dep>li {
+  display: inline-block;
+  padding: 5px 10px;
+  height: 40px;
+  position: relative;
+  margin-left: 10px;
+  margin-right: 10px;
+  transition: background-color 0.15s ease-in;
+}
+.gnb .menu1dep>li:hover {
+  background: #fff;
+}
+.gnb .menu1dep>li>a {
+  transition: all 0.15s ease-in;
+}
+.gnb .menu1dep>li:hover .menu_txt1 {
+  color: #69836f
+}
+.gnb .menu1dep>li .menu2dep {
+  /* display: none; */
+  position: absolute;
+  top: 100%;
+  left: 0;
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+  box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.25);
+  transition: all 0.15s ease-in;
+}
+.gnb .menu1dep>li:hover .menu2dep {
+  display: inline-block;
+  height: auto;
+  opacity: 1;
+  border-bottom: 4px solid #69836f;
+}
+.gnb .menu1dep>li .menu2dep>li {
+  display: block;
+  text-align: left;
+}
+.gnb .menu1dep>li .menu2dep a {
+  min-width: 100px;
+  padding: 10px 20px;
+  background: #eee;
+  border: 1px solid #eee;
+  color: #333;
+  line-height: 2;
+  opacity: 0.9;
+}
+.gnb .menu1dep>li .menu2dep li + li {
+  border-top: 4px solid #b4c9b9;
+}
+.gnb .menu1dep>li .menu2dep a:hover {
+  background: #fff;
+}
+
+/* contents */
+#container {
+  width: 1100px;
+  margin: 0 auto;
+  padding: 0 10px;
+  box-sizing: border-box;
+  min-height: calc(100vh - 154px);
+  padding-top: 155px;
+}
+
+/* 우측 하단 버튼 */
+.btnTop {
+  position: fixed;
+  bottom: 160px;
+  left: 50%;
+  width: 100px;
+  height: 100px;
+  margin: 0 0 0 635px;
+  background: url(../img/panda_btn.png) no-repeat;
+  background-size: 100px 90px;
+  text-indent: -9999px;
+  font-size: 1px;
+  z-index: 10;
+  border: 0;
+  outline: 0;
+}
+
+/* footer */
+.footer {
+  width: 100%;
+  border-top: 4px solid  #a7ada9;
+  background-color:#69836f;
+}
+.footer .inner_foo {
+  position: relative;
+  width: 1100px;
+  height: 150px;
+  box-sizing: border-box;
+  padding: 30px 10px;
+  margin: 0 auto;
+  font-size: 12px;
+  line-height: 1.5;
+  color: #111;
+}
+.footer .inner_foo a {
+  color: inherit;
+}
+.footer .inner_foo .foo_left_info {
+  position: absolute;
+  bottom: 30px;
+  left: 10px;
+}
+.footer .inner_foo .foo_right_info {
+  position: absolute;
+  bottom: 30px;
+  right: 10px;
+  text-align: right;
+}

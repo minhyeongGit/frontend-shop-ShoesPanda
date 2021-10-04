@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>CREATE ACCOUNT</title>
+        <link rel="stylesheet" href="css/join.css">
+        <script src="js/common.js"></script>
+        <script src="http://t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+
+
+    </head>
+
+    <body>
+        <div id="container">
+            <div class="logo">
+                <a href="main.html"><img src="img/logo.png"></a>
+            </div>
+            <div id="contents">
+                <div id="personAuth"><a href="#">휴대폰 인증하기</a>
+                </div>
+                <ul class="form-submit">
+                    <li>
+                        <label class="form-submit-subject">ID</label>
+                        <input id="member_id" name="member_id" class="inputTypeText" type="text" placeholder="ID">
+                    </li>
+                    <li>
+                        <label class="form-submit-subject">Password</label>
+                        <input id="passwd" name="passwd" type="password" placeholder="password">
+                    </li>
+                    <li>
+                        <label class="form-submit-subject">Password Check</label>
+                        <input id="user_passwd_confirm" name="user_passwd_confirm" type="password" placeholder="password">
+                    </li>
+                    <li id="nameTitle">
+                        <label class="form-submit-subject">Name</label>
+                        <input id="name" name="name" type="text" placeholder="이름">
+                    </li>
+                    <li>
+                        <label class="form-submit-subject">Address</label>
+                        <input class="Search_b" type="button" onclick="addressLoad()" value="Seacrh"><br>
+                        <input name="postcode" id="postcode" class="inputTypeText" readonly="readonly" type="text" placeholder="우편번호" value=""><br>
+                        <input name="address" id="address"  class="inputTypeText" readonly="readonly" type="text" placeholder="주소" value=""><br>
+                        <input name="address2" id="address2"  class="inputTypeText" type="text" placeholder="상세주소" value=""><br>
+                    </li>
+                    <li class="form-submit-phone ">
+                        <label class="form-submit-subject">Mobile</label>
+                        <select id="mobile1" name="mobile[]">
+                            <option value="010">010</option>
+                            <option value="011">011</option>
+                            <option value="016">016</option>
+                            <option value="017">017</option>
+                            <option value="018">018</option>
+                            <option value="019">019</option>
+                        </select>-<input id="mobile2" name="mobile[]" maxlength="4" type="text">-<input id="mobile3" name="mobile[]" maxlength="4" type="text"> <br> <span><input id="is_sms0" name="is_sms" class="ec-base-chk" type="checkbox" checked=""><label for="is_sms0">문자수신동의</label></span>
+                    </li>
+                    <li class="form-submit-email">
+                        <label class="form-submit-subject">E-mail</label>
+                        <input id="email1" name="email1" type="text"><br>
+                        <span><input id="is_news_mail" name="is_news_mail" class="ec-base-chk" type="checkbox" checked=""><label for="is_news_mail">메일수신동의</label></span>
+                    </li>
+                </ul>
+                <div class="agreement">
+                    <h4>이용약관</h4>
+                    <span class="toggle-trigger">READ</span>
+                    <p class="check">
+                        이용약관에 동의하십니까? 
+                        <span>
+                            <input id="agree_service_check0" name="agree_service_check[]" class="ec-base-chk" type="checkbox">
+                            <label for="agree_service_check0">동의함</label>
+                        </span>
+                    </p>
+                </div>
+                <div class="agreement">
+                    <h4>개인정보처리방침</h4>
+                    <span class="toggle-trigger">READ</span>
+                    <p class="check">
+                        개인정보 수집 및 이용에 동의하십니까? 
+                        <span>
+                            <input id="agree_service_check0" name="agree_service_check[]" class="ec-base-chk" type="checkbox">
+                            <label for="agree_service_check0">동의함</label>
+                        </span>
+                    </p>
+                </div>
+                <div class="register-button">
+                    <a href="#none" onclick="memberJoinAction()" class="underline">Create Account</a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

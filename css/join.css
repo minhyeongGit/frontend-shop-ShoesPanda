@@ -1,0 +1,140 @@
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+.Search_b{background: none; font-size: 15px;}
+.Search_b:hover{color: brown; font-weight: bold;}
+
+body{
+    font-family: 'HVN',Helvetica Neue,Helvetica,Arial,'Spoqa Han Sans',Noto Sans KR,sans-serif;
+    font-weight: 800;
+    font-size: 14px;
+    letter-spacing: 0.015em;
+    background: #FFF;
+}
+
+.logo{
+    font-size: 30px;
+    float: none;
+    margin: 0 auto;
+    width: 100%;
+    height: 300px;
+    text-align: center;
+    line-height: 250px;
+    
+}
+.logo img{
+    margin-top: 50px;
+    vertical-align: middle;
+    height: 200px;
+}
+
+
+div {
+    display: block;
+}
+
+#container{
+    margin: 0 auto;
+    line-height: 5;
+    font-size: 30px;
+}
+
+#contents{
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 30px;
+    min-height: 1200px;
+    font-size: 15px;
+    width: 400px;
+}
+
+#personAuth{
+    height: 50px;
+    text-align: center;
+}
+
+.form-submit li > label {
+    height: 25px;
+    display: block;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+input[type=text], input[type=password] {
+    width: 100%;
+    border: 0;
+    background: #FFF;
+    box-sizing: border-box;
+    padding: 8px 0px;
+    color: #000;
+    font-size: 14px;
+    font-family: inherit;
+    font-weight: 500;
+    border-radius: 0px;
+    text-transform: ;
+    border-bottom: 2px solid #000;
+}
+
+#postcode1 {
+    max-width: 100px;
+    float: left;
+}
+
+.form-submit-phone select {
+    max-width: 60px;
+    margin-right: 5px;
+}
+
+select {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 9px 7px 5px;
+    font-size: 14px;
+    font-family: inherit;
+    border: 0;
+    background: #FFF;
+    border-radius: 0px;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    position: relative;
+    font-weight: 700;
+    border: 2px solid #000;
+}
+
+.form-submit-phone input {
+    max-width: 50px;
+    margin: 0 5px;
+    padding: 7px 2px;
+    text-align: center;
+}
+
+.agreement {
+    margin: 50px 0 0;
+    position: relative;
+}
+
+.agreement h4 {
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.toggle-trigger {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.agreement>p{
+    font-weight: 700;
+}
